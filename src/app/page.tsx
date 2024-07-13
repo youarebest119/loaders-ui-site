@@ -185,7 +185,7 @@ export default function Home() {
     <main className="home_page">
       <div className="header_heading">
         <p>npm i loaders-ui <button onClick={() => handleCopy("npm i loaders-ui")}><CpI /></button></p>
-        <p>import &apos;loaders-ui/dist/main/index.min.css&apos;; <button onClick={() => handleCopy("Copied")}><CpI /></button></p>
+        <p>import &apos;loaders-ui/dist/main/index.min.css&apos;; <button onClick={() => handleCopy("import 'loaders-ui/dist/main/index.min.css';")}><CpI /></button></p>
       </div>
       <div className="banner">
         <h1>Loaders</h1>
