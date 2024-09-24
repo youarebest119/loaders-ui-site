@@ -1,27 +1,35 @@
 {
-  "name": "ui-loader",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev --port 4000",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "loaders-ui": "^1.1.5",
-    "next": "14.2.4",
-    "react": "^18",
-    "react-dom": "^18",
-    "react-hot-toast": "^2.4.1",
-    "sass": "^1.77.8"
-  },
-  "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.4",
-    "typescript": "^5"
-  }
+    "name": "project",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev --port 3001",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "@gsap/react": "^2.1.1",
+        "@reduxjs/toolkit": "^2.2.7",
+        "framer-motion": "^11.5.4",
+        "gsap": "^3.12.5",
+        "loaders-ui": "^1.1.61",
+        "next": "14.2.8",
+        "next-redux-wrapper": "^8.1.0",
+        "react": "^18",
+        "react-dom": "^18",
+        "react-pick-color": "^2.0.0",
+        "react-range": "^1.10.0",
+        "react-redux": "^9.1.2",
+        "sass": "^1.78.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20",
+        "@types/react": "^18",
+        "@types/react-color": "^3.0.12",
+        "@types/react-dom": "^18",
+        "eslint": "^8",
+        "eslint-config-next": "14.2.8",
+        "typescript": "^5"
+    }
 }

@@ -1,0 +1,39 @@
+.installation_modal {
+    .modal_content {
+        font-family: var(--secondary-font);
+
+        ul {
+            li {
+                &:not(:last-child) {
+                    margin-bottom: 16px;
+
+                }
+
+                h4 {
+                    font-size: 14px;
+                    font-weight: 600;
+                    margin-bottom: 8px;
+                }
+
+                .code_text {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    background-color: var(--card-secondary);
+                    border-radius: 10px;
+                    min-height: 58px;
+                    padding: 0 20px;
+
+                    &:not(:last-of-type) {
+                        margin-bottom: 6px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        font-size: 600;
+                    }
+                }
+            }
+        }
+    }
+}

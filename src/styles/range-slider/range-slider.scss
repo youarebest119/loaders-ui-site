@@ -1,0 +1,47 @@
+.range_slider {
+    .range_slider_track {
+        width: 100%;
+        height: 6px;
+        border-radius: 10px;
+        background-color: var(--button-secondary);
+
+        .range_slider_thumb {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: var(--button);
+            transition: 200ms ease-in-out;
+            transform-origin: bottom center;
+            outline: none;
+            z-index: 1;
+
+            p {
+                position: absolute;
+                bottom: 100%;
+                left: 50%;
+                width: max-content;
+                max-width: 100px;
+                background-color: var(--card-secondary);
+                padding: 0 8px;
+                border-radius: 8px;
+                font-size: 12px;
+                min-width: 30px;
+                text-align: center;
+                border: 1px solid var(--border);
+                opacity: 0;
+                visibility: hidden;
+                transform: translate(-50%, 1rem);
+                z-index: -1;
+                transition: 300ms ease-in-out;
+            }
+
+            &.grabbing {
+                p {
+                    opacity: 1;
+                    transform: translate(-50%, 0%);
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+// header
+.header {
+    .header_in {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 0;
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text);
+
+            svg {
+                margin-right: 10px;
+                max-width: 52px;
+                height: auto;
+            }
+        }
+
+        .header_action {
+            display: flex;
+            align-items: center;
+
+            >* {
+                &:not(:first-child) {
+                    margin-left: 16px;
+                }
+            }
+
+            a {
+
+                img,
+                svg {
+                    max-width: 24px;
+                    height: auto;
+                    object-fit: contain;
+                }
+
+                &.npm {
+
+                    svg,
+                    img {
+                        max-width: 34px;
+                    }
+                }
+
+            }
+        }
+    }
+}

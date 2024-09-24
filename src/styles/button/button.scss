@@ -1,0 +1,44 @@
+.custom-btn {
+    background-color: var(--button);
+    border: none;
+    outline: none;
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    padding: 0 24px;
+    height: 44px;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 300ms ease-in-out;
+
+    &:not(.secondary-btn) {
+        &:hover {
+            background-color: var(--button-dark);
+        }
+    }
+
+    &.secondary-btn {
+        background-color: var(--button-secondary);
+        color: var(--text);
+        // border: 1px solid var(--button-secondary);
+        outline: 1px solid transparent;
+        transition: outline 200ms ease-in-out, 300ms ease-in-out all;
+
+        &:hover {
+            outline-offset: 4px;
+            // border-color: var(--button);
+            scale: 0.80;
+            outline-color: var(--button);
+        }
+
+        &:active {
+            outline-offset: 0;
+        }
+    }
+}

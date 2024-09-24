@@ -1,0 +1,36 @@
+.spinner-loader {
+    @keyframes bounce {
+
+        0%,
+        80%,
+        100% {
+            transform: scale(0);
+        }
+
+        40% {
+            transform: scale(1.0);
+        }
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        width: 0.8rem;
+        height: 0.8rem;
+        background-color: var(--text);
+        border-radius: 100%;
+        margin: 0.2rem;
+        animation: bounce 1.4s infinite ease-in-out both;
+        flex-shrink: 0;
+
+        &:nth-child(1) {
+            animation-delay: -0.32s;
+        }
+
+        &:nth-child(2) {
+            animation-delay: -0.16s;
+        }
+    }
+}
