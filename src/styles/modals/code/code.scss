@@ -22,6 +22,7 @@
                     border-radius: 10px;
                     min-height: 58px;
                     padding: 20px 20px;
+                    position: relative;
 
                     &:not(:last-of-type) {
                         margin-bottom: 6px;
@@ -31,6 +32,13 @@
                         font-family: inherit;
                         font-size: 16px;
                         font-size: 600;
+                        overflow: auto;
+                    }
+
+                    .copy_btn {
+                        position: absolute;
+                        top: 6px;
+                        right: 6px;
                     }
                 }
             }

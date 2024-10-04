@@ -14,6 +14,8 @@
     --button-secondary: #E5E7EB;
     --modal-shadow: #3333330f;
     --modal: #f4f4f4;
+    --scrollbar: #e6e6e6;
+    --scrollbar-thumb: rgb(250, 241, 241);
 }
 
 body.dark-theme {
@@ -86,4 +88,18 @@ a {
 
 [data-no-transition] {
     transition: none !important;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    border-radius: 20px;
+    background-color: var(--scrollbar);
+}
+
+::-webkit-scrollbar-thumb {
+    width: 8px;
+    height: 8px;
+    background-color: var(--scrollbar-thumb);
+    border-radius: 20px;
 }
