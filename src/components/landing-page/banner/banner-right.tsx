@@ -1,7 +1,7 @@
 import { CodeIcon } from '@/assets/icons/icons';
 import ColorPicker from '@/components/color-picker/color-picker';
 import { clsx } from "@/utils/clsx";
-import { Spinner } from "loaders-ui";
+import { InfiniteDots, Spinner, DotsSpinner } from "loaders-ui";
 import Link from 'next/link';
 import { useRef, useState } from 'react';
 import Button from '../../button/button';
@@ -28,7 +28,18 @@ const BannerRight = () => {
             component: (props: { speed?: number, color?: string, size?: number }) => <Spinner {...props} />,
             size: true,
         },
-        // Add more loaders here
+        {
+            key: "infinite-dots",
+            label: "InfiniteDots",
+            component: (props: { speed?: number, color?: string, size?: number }) => <InfiniteDots {...props} />,
+            size: true,
+        },
+        {
+            key: "dots-spinner",
+            label: "DotsSpinner",
+            component: (props: { speed?: number, color?: string, size?: number }) => <DotsSpinner {...props} />,
+            size: true,
+        },
     ];
 
     useGSAP(() => {
@@ -86,7 +97,14 @@ const BannerRight = () => {
                         {loaders.map((item) => (
                             <li key={item.key}>
                                 <Link
-                                    onClick={() => setActiveLoader(item.key)}
+                                    onClick={() => {
+                                        setActiveLoader(item.key);
+                                        if (item.key === "infinite-dots") {
+                                            setStroke([10]);
+                                        } else {
+                                            setStroke([60]);
+                                        }
+                                    }}
                                     className={clsx(item.key === activeLoader && "active")}
                                     href="#"
                                 >

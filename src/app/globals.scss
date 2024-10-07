@@ -1,49 +1,88 @@
 :root {
     --font-family-sans: var(--font-inter), sans-serif;
     --secondary-font: var(--font-share-tech-mono), sans-serif;
-    --text: #333333;
-    --text-secondary: #6B7280;
-    --layout: #F9FAFB;
-    --layout-secondary: #F3F4F6;
-    --card: #f5f5f5;
-    --card-secondary: #ffefef;
-    --border: #E0E0E0;
-    --border-secondary: #E5E7EB;
+
+    /* Text colors */
+    --text: #222831;
+    /* Deep dark gray for better readability */
+    --text-secondary: #393E46;
+    /* Softer dark gray */
+
+    /* Layout with smooth gradient */
+    --layout: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+    --layout-secondary: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+
+    /* Card colors */
+    --card: #ffffff;
+    /* Clean white cards */
+    --card-secondary: #eff0f2;
+    /* Subtle light gray */
+
+    /* Borders */
+    --border: #DDDDDD;
+    /* Light gray for borders */
+    --border-secondary: #E0E0E0;
+    /* Slightly darker for secondary borders */
+
+    /* Buttons */
     --button: #007BFF;
-    --button-dark: #045fc0;
-    --button-secondary: #E5E7EB;
-    --modal-shadow: #3333330f;
-    --modal: #f4f4f4;
-    --scrollbar: #e6e6e6;
-    --scrollbar-thumb: rgb(250, 241, 241);
+    /* Vivid orange for primary buttons */
+    --button-dark: #046edf;
+    /* Darker orange for hover */
+    --button-secondary: #dfdfdf;
+    /* Soft neutral gray for secondary buttons */
+
+    /* Modal and scrollbar */
+    --modal-shadow: rgba(0, 0, 0, 0.05);
+    /* Light, subtle shadow */
+    --modal: #FAFAFA;
+    /* Soft off-white for modal background */
+    --scrollbar: #E6E6E6;
+    --scrollbar-thumb: #CCCCCC;
+    /* Light gray scrollbar with darker thumb */
 }
 
 body.dark-theme {
     --font-family-sans: var(--font-inter), sans-serif;
+
+    /* Text colors */
     --text: #E0E0E0;
-    /* Light gray text for dark mode */
-    --text-secondary: #9CA3AF;
-    /* Lighter gray for secondary text */
-    --layout: #1F2937;
-    /* Dark gray for the main layout */
-    --layout-secondary: #111827;
-    /* Darker gray for secondary layout */
-    --card: #232f42;
-    /* Dark blue-gray for cards */
-    --card-secondary: #2D3748;
-    /* Slightly lighter for secondary cards */
-    --border: #374151;
-    /* Darker gray border */
-    --border-secondary: #4B5563;
-    /* Lighter dark gray for secondary border */
-    --button: #3B82F6;
-    /* Lighter blue for primary buttons */
-    --button-dark: #2563EB;
-    /* Slightly darker blue for hover/focused button */
-    --button-secondary: #374151;
-    /* Dark gray for secondary buttons */
-    --modal-shadow: #00000021;
-    /* Darker shadow with transparency */
+    /* Soft light gray for text */
+    --text-secondary: #B0BEC5;
+    /* Muted light gray for secondary text */
+
+    /* Layout with modern gradient */
+    --layout: linear-gradient(135deg, #3a3d3e 0%, #414345 100%);
+    --layout-secondary: linear-gradient(135deg, #2c3e50 0%, #4ca1af 100%);
+
+    /* Card colors */
+    --card: #2B2B2B;
+    /* Dark gray for cards */
+    --card-secondary: #333333;
+    /* Slightly darker for secondary cards */
+
+    /* Borders */
+    --border: #4E4E4E;
+    /* Dark gray borders */
+    --border-secondary: #616161;
+    /* Slightly lighter dark gray */
+
+    /* Buttons */
+    --button: #007BFF;
+    /* Vivid orange for primary buttons */
+    --button-dark: #046edf;
+    /* Darker orange on hover */
+    --button-secondary: #757575;
+    /* Medium gray for secondary buttons */
+
+    /* Modal and scrollbar */
+    --modal-shadow: rgba(0, 0, 0, 0.3);
+    /* Darker modal shadow */
+    --modal: #2C2C2C;
+    /* Dark background for modal */
+    --scrollbar: #4E4E4E;
+    --scrollbar-thumb: #616161;
+    /* Dark gray scrollbar thumb */
 }
 
 *,
@@ -56,7 +95,7 @@ body.dark-theme {
 
 body {
     font-family: var(--font-family-sans);
-    background-color: var(--layout);
+    background: var(--layout);
     color: var(--text);
     min-height: 100dvh;
     display: flex;

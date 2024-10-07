@@ -22,7 +22,7 @@ const Code = ({ size, stroke, color, speed, name }: PropTypes) => {
                             1. import {`{ ${name} }`} from "loaders-ui" <br /> <br />
                             2. {`const ${name}Loader = () => {`}  <br /> <br />
                             3. {"    "}return (   <br /> <br />
-                            4. {"    "} {"    "}{`<${name} ${size && `size={ ${size} }`} ${color && `color={ "${color}" }`} />`}   <br /> <br />
+                            4. {"    "} {"    "}{`<${name} ${size && `size={ ${size} }`} ${speed && `speed={ ${speed} }`} ${color && `color={ "${color}" }`} />`}   <br /> <br />
                             5. {"    "}) <br /> <br />
                             6. {"}"} <br /> <br />
                             7. export default {name}Loader;
@@ -33,8 +33,10 @@ import { Infinite } from "loaders-ui"
 
 const InfiniteLoader = () => {  
     return (   
-        <${name} 000
-        
+        <${name}
+            ${size && `size={ ${size} }`}
+            ${speed && `speed={ ${speed} }`}
+            ${color && `color={ "${color}" }`}
         />   
     )    
 }

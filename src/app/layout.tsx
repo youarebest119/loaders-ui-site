@@ -31,7 +31,7 @@ export default function RootLayout({
     return (
         <html lang="en" className={`${inter.variable} ${shareTechMono.variable}`}>
             <body>
-                <h2 style={{ fontSize: 100, textAlign: "center" }}>COMING SOON</h2>
+                {/* <h2 style={{ fontSize: 100, textAlign: "center" }}>COMING SOON</h2> */}
                 {children}
             </body>
         </html>

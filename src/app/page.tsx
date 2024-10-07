@@ -2,6 +2,7 @@
 import Footer from "@/components/footer/footer";
 import Header from "@/components/header/header";
 import Banner from "@/components/landing-page/banner/banner";
+import React from "react";
 
 export default function Home() {
     return (

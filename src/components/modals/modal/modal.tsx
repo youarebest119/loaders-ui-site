@@ -24,6 +24,7 @@ const Modal = ({ onClose, children, handleOverlay, overlayClassName, className, 
         setTimeout(() => {
             if (modalRef.current) {
                 modalRef.current.classList.add('show');
+                document.body.style.overflow = "hidden";
             }
         }, 0);
     }, []);
@@ -32,6 +33,7 @@ const Modal = ({ onClose, children, handleOverlay, overlayClassName, className, 
         if (modalRef.current) {
             modalRef.current.classList.remove('show');
             modalRef.current.addEventListener('transitionend', onClose, { once: true });
+            document.body.style.overflow = "";
         }
     };
 
