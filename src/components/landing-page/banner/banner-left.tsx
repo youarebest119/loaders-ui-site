@@ -1,4 +1,4 @@
-import { DownloadIcon, EyeOpen } from '@/assets/icons/icons';
+import { DownloadIcon, EyeOpen, RightIcon } from '@/assets/icons/icons';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { useRef } from 'react';
@@ -36,7 +36,7 @@ const BannerLeft = () => {
                     <Button onClick={showInstallation}><DownloadIcon /> {EXTRA.INSTALLATION_BTN}</Button>
                 </div>}
                 {EXTRA.PREVIEW_BTN && <div>
-                    <Button className="secondary-btn"><EyeOpen /> {EXTRA.PREVIEW_BTN}</Button>
+                    <Button className="secondary-btn"> {EXTRA.PREVIEW_BTN} <RightIcon />  </Button>
                 </div>}
             </div>
         </div>
